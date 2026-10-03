@@ -1,0 +1,15 @@
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter.deps.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter.runtimeconfig.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter.pdb
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.AssemblyInfoInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.AssemblyInfo.cs
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.csproj.CoreCompileInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.sourcelink.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/refint/Starter.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.pdb
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/Starter.genruntimeconfig.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson5/GuidedProject/Starter/obj/Debug/net10.0/ref/Starter.dll
