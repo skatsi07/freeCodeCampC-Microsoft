@@ -1,0 +1,5 @@
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson6/ChallengeProject/Starter/obj/Debug/net10.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson6/ChallengeProject/Starter/obj/Debug/net10.0/Starter.AssemblyInfoInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson6/ChallengeProject/Starter/obj/Debug/net10.0/Starter.AssemblyInfo.cs
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson6/ChallengeProject/Starter/obj/Debug/net10.0/Starter.csproj.CoreCompileInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/runSimpleCSharpConsoleApplications/Lesson6/ChallengeProject/Starter/obj/Debug/net10.0/Starter.sourcelink.json
