@@ -1,22 +1,35 @@
 string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringsCount = myStrings.Length;
 
+string myString = "";
 int periodLocation = 0;
 
-foreach (string myString in myStrings)
+for (int i = 0; i < stringsCount; i++)
 {
+    myString = myStrings[i];
     periodLocation = myString.IndexOf(".");
-    string stringEdit;
 
-    string theSentence;
+    string mySentence;
 
+    // extract sentences from each string and display them one at a time
     while (periodLocation != -1)
     {
-        theSentence = myString.Remove(periodLocation);
-        stringEdit = myString.Substring(periodLocation + 1);
-        stringEdit = myString.TrimStart();
-        Console.WriteLine(theSentence);
+
+        // first sentence is the string value to the left of the period location
+        mySentence = myString.Remove(periodLocation);
+
+        // the remainder of myString is the string value to the right of the location
+        myString = myString.Substring(periodLocation + 1);
+
+        // remove any leading white-space from myString
+        myString = myString.TrimStart();
+
+        // update the comma location and increment the counter
         periodLocation = myString.IndexOf(".");
+
+        Console.WriteLine(mySentence);
     }
-    theSentence = myString.Trim();
-    Console.WriteLine(theSentence);
+ 
+    mySentence = myString.Trim();
+    Console.WriteLine(mySentence);
 }
