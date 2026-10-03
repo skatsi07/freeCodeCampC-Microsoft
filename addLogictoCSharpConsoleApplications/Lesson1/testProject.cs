@@ -10,3 +10,8 @@ string pangram = "The quick brown fox jumps over the lazy dog.";
 
 Console.WriteLine(pangram.Contains("fox") == false);
 Console.WriteLine(!pangram.Contains("fox"));
+
+int saleAmount = 1001;
+// int discount = saleAmount > 1000 ? 100 : 50;
+
+Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
