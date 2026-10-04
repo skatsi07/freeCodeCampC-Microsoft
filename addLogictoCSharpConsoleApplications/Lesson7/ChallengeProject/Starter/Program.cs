@@ -329,7 +329,50 @@ do
 
         case "4":
             // Ensure animal nicknames and personality descriptions are complete
-            Console.WriteLine("Challenge Project - please check back soon to see progress.");
+            for (int i = 0; i < maxPets; i++)
+            {
+                //checking and changing nickname
+                if (ourAnimals[i, 3] == "Nickname: " && ourAnimals[i, 0] != "ID #: ")
+                {
+                    string input = "";
+                    do
+                    {
+                        Console.WriteLine($"Enter a nickname for {ourAnimals[i, 0]}");
+                        input = Console.ReadLine();
+                        //make sure it isnt null
+                        if (input == "")
+                        {
+                            validEntry = false;
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
+                    } while (validEntry == false);
+                    ourAnimals[i, 3] = "Nickname: " + input;
+                }
+
+                //checking and changing personality
+                if (ourAnimals[i, 5] == "Personality: " && ourAnimals[i, 0] != "ID #: ")
+                {
+                    string input = "";
+                    do
+                    {
+                        Console.WriteLine($"Enter a personality description for {ourAnimals[i, 0]} (likes or dislikes, tricks, energy level)");
+                        input = Console.ReadLine();
+                        //make sure it isnt null
+                        if (input == "")
+                        {
+                            validEntry = false;
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
+                    } while (validEntry == false);
+                    ourAnimals[i, 5] = "Personality: " + input;
+                }
+            }
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
