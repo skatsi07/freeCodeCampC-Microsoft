@@ -193,11 +193,11 @@ do
                             
                             // #3a iterate submitted characteristic terms and search description for each term
                             
-                            if (dogDescription.Contains(dogCharacteristic))
+                            if (dogDescription.Contains(" " + term.Trim() + " "))
                             {
                                 // #3b update message to reflect term 
                                 // #3c set a flag "this dog" is a match
-                                Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} matches the search for {term}");
+                                Console.WriteLine($"Our dog {ourAnimals[i, 3]} matches the search for {term}");
 
                                 noMatchesDog = false;
                                 matchesThisDog = true;
