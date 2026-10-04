@@ -179,18 +179,18 @@ do
                         //check and make sure not null or blank string
                         if (term != null && term != "")
                         {
-                            for (int j = 5; j > -1 ; j--)
+                            for (int j = 2; j > -1 ; j--)
                             {
-                            // #5 update "searching" message to show countdown 
+                                // #5 update "searching" message to show countdown
                                 foreach (string icon in searchingIcons)
                                 {
-                                    Console.Write($"\rsearching our dog {ourAnimals[i, 3]} for {dogCharacteristic} {icon}");
+                                    Console.Write($"\rsearching our dog {ourAnimals[i, 3]} for {term} {icon} {j.ToString()}");
                                     Thread.Sleep(250);
                                 }
                                 
                                 Console.Write($"\r{new String(' ', Console.BufferWidth)}");
                             }
-                            
+
                             // #3a iterate submitted characteristic terms and search description for each term
                             
                             if (dogDescription.Contains(" " + term.Trim() + " "))
