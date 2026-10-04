@@ -150,7 +150,16 @@ do
             string dogDescription = "";
             
             // #4 update to "rotating" animation with countdown
-            string[] searchingIcons = {".  ", ".. ", "..."};
+            string[] searchingIcons = {"|", "/", "--", "\\", "*"};
+
+            //get the dog search inputs split and trimmed
+            string[] dogCharacteristics = dogCharacteristic.Split(",");
+            for (int i = 0; i < dogCharacteristics.Length; i++)
+            {
+                dogCharacteristics[i] = dogCharacteristics[i].Trim();
+            }
+
+            Array.Sort(dogCharacteristics);
 
             // loop ourAnimals array to search for matching animals
             for (int i = 0; i < maxPets; i++)
@@ -161,31 +170,48 @@ do
                     
                     // Search combined descriptions and report results
                     dogDescription = ourAnimals[i, 4] + "\r\n" + ourAnimals[i, 5];
-                    
-                    for (int j = 5; j > -1 ; j--)
-                    {
-                    // #5 update "searching" message to show countdown 
-                        foreach (string icon in searchingIcons)
-                        {
-                            Console.Write($"\rsearching our dog {ourAnimals[i, 3]} for {dogCharacteristic} {icon}");
-                            Thread.Sleep(250);
-                        }
-                        
-                        Console.Write($"\r{new String(' ', Console.BufferWidth)}");
-                    }
-                    
-                    // #3a iterate submitted characteristic terms and search description for each term
-                    
-                    if (dogDescription.Contains(dogCharacteristic))
-                    {
-                        // #3b update message to reflect term 
-                        // #3c set a flag "this dog" is a match
-                        Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} is a match!");
 
-                        noMatchesDog = false;
+                    bool matchesThisDog = false;
+
+                    //loop through each search term
+                    foreach (string term in dogCharacteristics)
+                    {
+                        //check and make sure not null or blank string
+                        if (term != null && term != "")
+                        {
+                            for (int j = 5; j > -1 ; j--)
+                            {
+                            // #5 update "searching" message to show countdown 
+                                foreach (string icon in searchingIcons)
+                                {
+                                    Console.Write($"\rsearching our dog {ourAnimals[i, 3]} for {dogCharacteristic} {icon}");
+                                    Thread.Sleep(250);
+                                }
+                                
+                                Console.Write($"\r{new String(' ', Console.BufferWidth)}");
+                            }
+                            
+                            // #3a iterate submitted characteristic terms and search description for each term
+                            
+                            if (dogDescription.Contains(dogCharacteristic))
+                            {
+                                // #3b update message to reflect term 
+                                // #3c set a flag "this dog" is a match
+                                Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} matches the search for {term}");
+
+                                noMatchesDog = false;
+                                matchesThisDog = true;
+                            }
+                        }
                     }
+                    
 
                     // #3d if "this dog" is match write match message + dog description
+                    if(matchesThisDog)
+                    {
+                        Console.WriteLine($"We found these characteristics for our dog {ourAnimals[i, 3]} ({ourAnimals[i, 0]})\n{dogDescription}");
+                        Console.WriteLine();
+                    }
                 }
             }
 
