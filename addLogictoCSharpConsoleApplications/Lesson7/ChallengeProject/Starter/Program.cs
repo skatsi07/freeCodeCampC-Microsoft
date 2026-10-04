@@ -287,8 +287,43 @@ do
 
         case "3":
             // Ensure animal ages and physical descriptions are complete
-            Console.WriteLine("Challenge Project - please check back soon to see progress.");
-            Console.WriteLine("Press the Enter key to continue.");
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 2] == "Age: ?" && ourAnimals[i, 0] != "ID #: ")
+                {
+                    do
+                    {
+                        Console.WriteLine($"Enter an age for {ourAnimals[i, 0]}");
+                        string input = Console.ReadLine();
+
+                        //validate input
+                        validEntry = int.TryParse(input, out petAge);
+                    } while (validEntry == false);
+                    ourAnimals[i, 2] = "Age: " + petAge.ToString();
+                }
+
+                if (ourAnimals[i, 4] == "Physical description: " && ourAnimals[i, 0] != "ID #: ")
+                {
+                    string animalDesc = "";
+                    do
+                    {
+                        Console.WriteLine($"Enter a physical description for {ourAnimals[i, 0]} (size, colour, gender, weight, housebroken)");
+                        string input = Console.ReadLine();
+                        animalDesc = input.ToLower();
+                        if (animalDesc == "")
+                        {
+                            validEntry = false;
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
+                    } while (validEntry == false);
+                    ourAnimals[i, 4] = "Physical description: " + animalDesc;
+                }
+            }
+            Console.WriteLine("Age and physical description fields are complete for all of our friends.");
+            Console.WriteLine("Press the Enter key to continue");
             readResult = Console.ReadLine();
             break;
 
