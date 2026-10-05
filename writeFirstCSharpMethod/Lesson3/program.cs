@@ -28,20 +28,53 @@
 //     return input.ToString().Substring(0, 5);
 // }
 
-double usd = 23.73;
-int vnd = UsdToVnd(usd);
+// double usd = 23.73;
+// int vnd = UsdToVnd(usd);
 
-Console.WriteLine($"${usd} USD = ${vnd} VND");
+// Console.WriteLine($"${usd} USD = ${vnd} VND");
 
-int UsdToVnd(double usd) 
+// int UsdToVnd(double usd) 
+// {
+//     int rate = 23500;
+//     return (int) (rate * usd);
+// }
+
+// double VndToUsd(int vnd) 
+// {
+//     double rate = 23500;
+//     return vnd / rate;
+// }
+// Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
+
+string ReverseWord(string word) 
 {
-    int rate = 23500;
-    return (int) (rate * usd);
+    string result = "";
+    for (int i = word.Length - 1; i >= 0; i--) 
+    {
+        result += word[i];
+    }
+    return result;
 }
 
-double VndToUsd(int vnd) 
+string input = "snake";
+
+Console.WriteLine(input);
+Console.WriteLine(ReverseWord(input));
+
+string ReverseSentence(string input) 
 {
-    double rate = 23500;
-    return vnd / rate;
+    string result = "";
+    string[] words = input.Split(" ");
+
+    foreach(string word in words) 
+    {
+        result += ReverseWord(word) + " ";
+    }
+
+    return result.Trim();
 }
-Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
+
+string input2 = "there are snakes at the zoo";
+
+Console.WriteLine(input2);
+Console.WriteLine(ReverseSentence(input2));
