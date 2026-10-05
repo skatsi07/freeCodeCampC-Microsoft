@@ -46,35 +46,61 @@
 // }
 // Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
 
-string ReverseWord(string word) 
+// string ReverseWord(string word) 
+// {
+//     string result = "";
+//     for (int i = word.Length - 1; i >= 0; i--) 
+//     {
+//         result += word[i];
+//     }
+//     return result;
+// }
+
+// string input = "snake";
+
+// Console.WriteLine(input);
+// Console.WriteLine(ReverseWord(input));
+
+// string ReverseSentence(string input) 
+// {
+//     string result = "";
+//     string[] words = input.Split(" ");
+
+//     foreach(string word in words) 
+//     {
+//         result += ReverseWord(word) + " ";
+//     }
+
+//     return result.Trim();
+// }
+
+// string input2 = "there are snakes at the zoo";
+
+// Console.WriteLine(input2);
+// Console.WriteLine(ReverseSentence(input2));
+
+string[] words = {"racecar" ,"talented", "deified", "tent", "tenet"};
+
+Console.WriteLine("Is it a palindrome?");
+foreach (string word in words) 
 {
-    string result = "";
-    for (int i = word.Length - 1; i >= 0; i--) 
-    {
-        result += word[i];
-    }
-    return result;
+    Console.WriteLine($"{word}: {IsPalindrome(word)}");
 }
 
-string input = "snake";
-
-Console.WriteLine(input);
-Console.WriteLine(ReverseWord(input));
-
-string ReverseSentence(string input) 
+bool IsPalindrome(string word) 
 {
-    string result = "";
-    string[] words = input.Split(" ");
+    int start = 0;
+    int end = word.Length - 1;
 
-    foreach(string word in words) 
+    while (start < end) 
     {
-        result += ReverseWord(word) + " ";
+        if (word[start] != word[end]) 
+        {
+            return false;
+        }
+        start++;
+        end--;
     }
 
-    return result.Trim();
+    return true;
 }
-
-string input2 = "there are snakes at the zoo";
-
-Console.WriteLine(input2);
-Console.WriteLine(ReverseSentence(input2));
