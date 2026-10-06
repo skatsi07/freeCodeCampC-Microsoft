@@ -16,6 +16,17 @@
             "stopAtEntry": false
         },
         {
+            "name": ".NET Core Launch (Lesson4)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-lesson4",
+            "program": "${workspaceFolder}/debuggingConsoleApplications/Lesson4/bin/Debug/net10.0/Lesson4.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/debuggingConsoleApplications/Lesson4",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": ".NET Core Attach (Interactive Terminal)",
             "type": "coreclr",
             "request": "attach",
