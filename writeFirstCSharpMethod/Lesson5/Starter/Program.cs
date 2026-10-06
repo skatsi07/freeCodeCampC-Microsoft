@@ -32,10 +32,21 @@ while (!shouldExit)
         Console.Write("Console was resized. Program exiting.");
         shouldExit = true;
     }
-    else
+    else 
     {
-        Move(1, false);
-        if(CanEatFood()){
+        if (shouldSpeedUp()) 
+        {
+            Move(1, false);
+        } 
+        else if (shouldFreeze()) 
+        {
+            FreezePlayer();
+        } else 
+        {
+            Move(otherKeysExit: false);
+        }
+        if (CanEatFood())
+        {
             ChangePlayer();
             ShowFood();
         }
@@ -125,6 +136,16 @@ void Move(int speed = 1, bool otherKeysExit = false)
     // Draw the player at the new location
     Console.SetCursorPosition(playerX, playerY);
     Console.Write(player);
+}
+
+bool shouldFreeze()
+{
+    return player.Equals(states[2]);
+}
+
+bool shouldSpeedUp()
+{
+    return player.Equals(states[1]);
 }
 
 //eat food
