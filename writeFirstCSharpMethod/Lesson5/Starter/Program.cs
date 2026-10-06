@@ -34,7 +34,11 @@ while (!shouldExit)
     }
     else
     {
-        Move();
+        Move(1, false);
+        if(CanEatFood()){
+            ChangePlayer();
+            ShowFood();
+        }
     }
     
 }
@@ -76,7 +80,7 @@ void FreezePlayer()
 }
 
 // Reads directional input from the Console and moves the player
-void Move() 
+void Move(int speed = 1, bool otherKeysExit = false) 
 {
     int lastX = playerX;
     int lastY = playerY;
@@ -98,6 +102,13 @@ void Move()
 		case ConsoleKey.Escape:     
             shouldExit = true; 
             break;
+        default:
+            // exit if other key is pressed
+            if(otherKeysExit) {
+                shouldExit = true;
+            }
+            break;
+
     }
 
     // Clear the characters at the previous position
@@ -114,6 +125,11 @@ void Move()
     // Draw the player at the new location
     Console.SetCursorPosition(playerX, playerY);
     Console.Write(player);
+}
+
+//eat food
+bool CanEatFood() {
+    return playerY == foodY && playerX == foodX;
 }
 
 // Clears the console, displays the food and player
