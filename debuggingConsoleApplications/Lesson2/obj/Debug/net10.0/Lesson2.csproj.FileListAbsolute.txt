@@ -1,0 +1,15 @@
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/bin/Debug/net10.0/Lesson2
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/bin/Debug/net10.0/Lesson2.deps.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/bin/Debug/net10.0/Lesson2.runtimeconfig.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/bin/Debug/net10.0/Lesson2.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/bin/Debug/net10.0/Lesson2.pdb
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.AssemblyInfoInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.AssemblyInfo.cs
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.csproj.CoreCompileInputs.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.sourcelink.json
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/refint/Lesson2.dll
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.pdb
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/Lesson2.genruntimeconfig.cache
+/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson2/obj/Debug/net10.0/ref/Lesson2.dll
