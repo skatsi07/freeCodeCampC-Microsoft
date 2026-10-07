@@ -27,6 +27,17 @@
             "stopAtEntry": false
         },
         {
+            "name": ".NET Core Launch (Lesson5 Starter)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-lesson5-starter",
+            "program": "${workspaceFolder}/debuggingConsoleApplications/Lesson5/GuidedProject/Starter/bin/Debug/net10.0/Starter.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/debuggingConsoleApplications/Lesson5/GuidedProject/Starter",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": ".NET Core Attach (Interactive Terminal)",
             "type": "coreclr",
             "request": "attach",
