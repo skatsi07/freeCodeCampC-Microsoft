@@ -32,6 +32,7 @@ int[,] registerDailyStartingCash = new int[,] { { 1, 50 }, { 5, 20 }, { 10, 10 }
 int[] testData = new int[] { 6, 10, 17, 20, 31, 36, 40, 41 };
 int testCounter = 0;
 
+
 LoadTillEachMorning(registerDailyStartingCash, cashTill);
 
 registerCheckTillTotal = registerDailyStartingCash[0, 0] * registerDailyStartingCash[0, 1] + registerDailyStartingCash[1, 0] * registerDailyStartingCash[1, 1] + registerDailyStartingCash[2, 0] * registerDailyStartingCash[2, 1] + registerDailyStartingCash[3, 0] * registerDailyStartingCash[3, 1];
@@ -115,10 +116,16 @@ static void LoadTillEachMorning(int[,] registerDailyStartingCash, int[] cashTill
 
 static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
 {
-    cashTill[3] += twenties;
-    cashTill[2] += tens;
-    cashTill[1] += fives;
-    cashTill[0] += ones;
+    //operate on temp variables in case transaction does not succeed
+    int tempTwenties = cashTill[3];
+    int tempTens = cashTill[2];
+    int tempFives = cashTill[1];
+    int tempOnes = cashTill[0];
+    
+    tempTwenties += twenties;
+    tempTens += tens;
+    tempFives += fives;
+    tempOnes += ones;
 
     int amountPaid = twenties * 20 + tens * 10 + fives * 5 + ones;
     int changeNeeded = amountPaid - cost;
@@ -128,36 +135,42 @@ static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int
 
     Console.WriteLine("Cashier prepares the following change:");
 
-    while ((changeNeeded > 19) && (cashTill[3] > 0))
+    while ((changeNeeded > 19) && (tempTwenties > 0))
     {
-        cashTill[3]--;
+        tempTwenties--;
         changeNeeded -= 20;
         Console.WriteLine("\t A twenty");
     }
 
-    while ((changeNeeded > 9) && (cashTill[2] > 0))
+    while ((changeNeeded > 9) && (tempTens > 0))
     {
-        cashTill[2]--;
+        tempTens--;
         changeNeeded -= 10;
         Console.WriteLine("\t A ten");
     }
 
-    while ((changeNeeded > 4) && (cashTill[1] > 0))
+    while ((changeNeeded > 4) && (tempFives > 0))
     {
-        cashTill[1]--;
+        tempFives--;
         changeNeeded -= 5;
         Console.WriteLine("\t A five");
     }
 
-    while ((changeNeeded > 0) && (cashTill[0] > 0))
+    while ((changeNeeded > 0) && (tempOnes > 0))
     {
-        cashTill[0]--;
+        tempOnes--;
         changeNeeded -= 1;
         Console.WriteLine("\t A one");
     }
 
     if (changeNeeded > 0)
         throw new InvalidOperationException("InvalidOperationException: The till is unable to make change for the cash provided.");
+    
+    //update till if successful
+    cashTill[3] = tempTwenties;
+    cashTill[2] = tempTens;
+    cashTill[1] = tempFives;
+    cashTill[0] = tempOnes;
 
 }
 
