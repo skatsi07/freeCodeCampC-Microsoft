@@ -38,13 +38,13 @@
             "stopAtEntry": false
         },
         {
-            "name": ".NET Core Launch (Lesson7 Starter)",
+            "name": ".NET Core Launch (Lesson6 Starter)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build-lesson7-starter",
-            "program": "${workspaceFolder}/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter/bin/Debug/net10.0/Starter.dll",
+            "preLaunchTask": "build-lesson6-starter",
+            "program": "${workspaceFolder}/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter/bin/Debug/net10.0/Starter.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter",
+            "cwd": "${workspaceFolder}/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },

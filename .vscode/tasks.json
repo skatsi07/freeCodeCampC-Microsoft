@@ -38,12 +38,12 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build-lesson7-starter",
+            "label": "build-lesson6-starter",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter/Starter.csproj",
+                "${workspaceFolder}/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter/Starter.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter/Starter.csproj",
+      "projectUniqueName": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter/Starter.csproj",
       "projectName": "Starter",
-      "projectPath": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter/Starter.csproj",
+      "projectPath": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter/Starter.csproj",
       "packagesPath": "/Users/simon/.nuget/packages/",
-      "outputPath": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson7/ChallengeProject/Starter/obj/",
+      "outputPath": "/Users/simon/Desktop/Uni/Engineering/freeCodeCampC-Microsoft/debuggingConsoleApplications/Lesson6/ChallengeProject/Starter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/simon/.nuget/NuGet/NuGet.Config"
